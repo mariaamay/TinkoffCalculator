@@ -39,7 +39,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUJ-HL-75H"/>
+                                    <action selector="calculateButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZn-5F-f1t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-ag-9N6">
@@ -182,7 +182,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyI-nV-AAS"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ux-5J-5d4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnl-GF-Z4Z">
@@ -195,7 +195,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soT-Hk-1SS"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dbd-A4-vtW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nO-E7-rXv">
@@ -208,7 +208,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFB-Rf-8tH"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meY-c0-AeI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-Hb-JBs">
@@ -221,7 +221,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eld-6d-vxj"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTs-Nq-EvD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgz-fQ-a0z">
@@ -234,9 +234,15 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCT-n8-2Z1"/>
+                                    <action selector="clearButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="zt8-1x-SrL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="h0h-vG-KvX">
+                                <rect key="frame" x="20" y="261" width="390" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -248,6 +254,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tg1-yn-XXT" secondAttribute="bottom" id="1G1-BN-pda"/>
                             <constraint firstItem="5Kj-2E-Qnl" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="3Ud-JI-QWC"/>
                             <constraint firstItem="7JW-C6-R9j" firstAttribute="leading" secondItem="Tda-lG-FPL" secondAttribute="trailing" id="4p5-rK-NAP"/>
+                            <constraint firstItem="h0h-vG-KvX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4zd-ur-0ZE"/>
                             <constraint firstItem="E4D-Wa-5vb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="5pV-Th-lSj"/>
                             <constraint firstItem="Tda-lG-FPL" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="71d-za-Myj"/>
                             <constraint firstItem="2nO-E7-rXv" firstAttribute="leading" secondItem="j8u-Tt-HI0" secondAttribute="trailing" id="7Ig-ti-KT4"/>
@@ -278,8 +285,10 @@
                             <constraint firstItem="Tda-lG-FPL" firstAttribute="bottom" secondItem="S80-NA-Qxt" secondAttribute="top" id="PaW-zf-JOi"/>
                             <constraint firstItem="t9f-ny-tIu" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="Qhg-2i-U58"/>
                             <constraint firstItem="7JW-C6-R9j" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="RLk-tF-WjS"/>
+                            <constraint firstItem="gnl-GF-Z4Z" firstAttribute="top" secondItem="h0h-vG-KvX" secondAttribute="bottom" constant="20" id="Rp4-tz-Sze"/>
                             <constraint firstItem="S80-NA-Qxt" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="SL5-y5-WzQ"/>
                             <constraint firstItem="Tda-lG-FPL" firstAttribute="leading" secondItem="5Kj-2E-Qnl" secondAttribute="trailing" id="Sbc-bP-iEa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0h-vG-KvX" secondAttribute="trailing" constant="20" id="SyP-zI-XQP"/>
                             <constraint firstItem="nwY-nJ-Tc3" firstAttribute="bottom" secondItem="Tg1-yn-XXT" secondAttribute="top" id="TkN-3B-PVd"/>
                             <constraint firstItem="GKv-Bz-nty" firstAttribute="bottom" secondItem="E4D-Wa-5vb" secondAttribute="top" id="WUx-9D-WQs"/>
                             <constraint firstItem="S80-NA-Qxt" firstAttribute="leading" secondItem="EQs-ag-9N6" secondAttribute="trailing" id="XH2-IS-RRR"/>
@@ -311,10 +320,13 @@
                             <constraint firstItem="EQs-ag-9N6" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="yjI-6o-rzr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="h0h-vG-KvX" id="WwC-1c-Mjs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="4"/>
+            <point key="canvasLocation" x="20.930232558139533" y="3.8626609442060089"/>
         </scene>
     </scenes>
     <resources>
